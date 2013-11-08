@@ -22,6 +22,7 @@ public class MainFrame extends JFrame {
     }
 
     private void createComponents() {
+       this.add(createMoneyDialog());
        this.add(createToolbar(),BorderLayout.SOUTH);
     }
 
@@ -61,6 +62,13 @@ public class MainFrame extends JFrame {
     }
     private void calculate(){
         System.out.println("Calculating...");
+    }
+
+    private JPanel createMoneyDialog() {
+       JPanel panel = new JPanel();
+       panel.add(new MoneyPanel());
+       panel.add(new CurrencyPanel());
+       return panel;
     }
             
     
