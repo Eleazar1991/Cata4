@@ -1,7 +1,5 @@
 package cata4;
 
-import java.awt.PopupMenu;
-import javax.swing.ComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 
